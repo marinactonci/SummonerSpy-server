@@ -9,7 +9,7 @@ const port = 4320;
 app.use(bodyParser.json());
 app.use(cors());
 
-axios.defaults.headers.common['X-Riot-Token'] = 'RGAPI-367807b7-7670-46db-adf9-179f90be46b1';
+axios.defaults.headers.common['X-Riot-Token'] = 'RGAPI-343d9aba-089b-4f02-99f1-be2d2ebf249d';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDjdorNRCh8pjbJNVRkkfBIA052ojYYwts",
