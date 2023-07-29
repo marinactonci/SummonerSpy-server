@@ -7,13 +7,12 @@
     "firebase": "^8.6.8"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "name": "summonerspy-server",
   "version": "1.0.0",
   "main": "server.js",
   "devDependencies": {
-    "nodemon": "^3.0.1"
   },
   "keywords": [],
   "author": "",
