@@ -5,19 +5,20 @@ const app = express();
 const cors = require('cors');
 const firebase = require('firebase');
 const port = 4320;
+require('dotenv').config();
 
 app.use(bodyParser.json());
 app.use(cors());
 
-axios.defaults.headers.common['X-Riot-Token'] = 'YOUR-API-KEY';
+axios.defaults.headers.common['X-Riot-Token'] = 'RGAPI-16ccd13c-1a87-45bd-927f-d62de7c46a81';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDjdorNRCh8pjbJNVRkkfBIA052ojYYwts",
-    authDomain: "summonerspy-ad89d.firebaseapp.com",
-    projectId: "summonerspy-ad89d",
-    storageBucket: "summonerspy-ad89d.appspot.com",
-    messagingSenderId: "662417332725",
-    appId: "1:662417332725:web:1845f29683ef224469a8bc"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID
 }
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
