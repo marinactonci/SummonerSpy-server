@@ -10,7 +10,7 @@ require('dotenv').config();
 app.use(bodyParser.json());
 app.use(cors());
 
-axios.defaults.headers.common['X-Riot-Token'] = 'YOUR-API-KEY-HERE';
+axios.defaults.headers.common['X-Riot-Token'] = 'YOUR-API-KEY';
 
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
