@@ -242,9 +242,9 @@ app.get('/rankPoints/:region/:id', (req, res) => {
         });
 });
 
-app.get('/masteryPoints/:region/:id', (req, res) => {
-    const { region, id } = req.params;
-    axios.get(`https://${region}.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/${id}/top`)
+app.get('/masteryPoints/:region/:puuid', (req, res) => {
+    const { region, puuid } = req.params;
+    axios.get(`https://${region}.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-puuid/${puuid}/top`)
         .then(response => {
             res.status(200).send(response.data);
         })
