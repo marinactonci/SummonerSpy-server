@@ -11,3 +11,4 @@ Created APIs you can test out are:
 
 Notes:
 - :server represents Riot's server code for a desired region. Ex. for EU Nordic & East, server would be eun1, for EU West, 'euw1'. Full list of server codes can be found [here](https://developer.riotgames.com/docs/lol#routing-values).
+- :queueType is a code for wanted queue type. Can be either 'RANKED_SOLO_5x5' or 'RANKED_FLEX_SR'
