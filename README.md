@@ -1,7 +1,7 @@
 # Summoner Spy
 
 This is the backend repository of Summoner Spy project. Frontend can be found [here](https://github.com/marinactonci/SummonerSpy-client).
-Consists of API calls for getting data from Riot's official API endpoints.
+Consists of API calls for getting data from Riot's official API endpoints and for sending / receiving data from Firebase Database.
 Backend is deployed to [summoner-spy.site](https://summoner-spy.site/).
 
 Created APIs you can test out are:
